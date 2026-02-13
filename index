@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propuesta Estratégica AI-Driven | $250</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap');
+        
+        :root {
+            --bg-deep: #060410;
+            --accent-purple: #8b5cf6;
+            --glass: rgba(255, 255, 255, 0.03);
+            --border: rgba(139, 92, 246, 0.2);
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-deep);
+            color: #f8fafc;
+            overflow-x: hidden;
+        }
+
+        .glass-card {
+            background: var(--glass);
+            backdrop-filter: blur(12px);
+            border: 1px solid var(--border);
+            border-radius: 24px;
+            transition: all 0.3s ease;
+        }
+
+        .glass-card:hover {
+            border-color: var(--accent-purple);
+            box-shadow: 0 0 40px rgba(139, 92, 246, 0.15);
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #ddd6fe 0%, #a78bfa 50%, #8b5cf6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .purple-glow {
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(139, 92, 246, 0.15) 0%, transparent 70%);
+            z-index: -1;
+            filter: blur(60px);
+        }
+
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin: auto;
+            height: 300px;
+        }
+
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: var(--bg-deep); }
+        ::-webkit-scrollbar-thumb { background: #1e1b4b; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: var(--accent-purple); }
+    </style>
+</head>
+<body class="antialiased selection:bg-purple-500/30">
+
+    <!-- Background Effects -->
+    <div class="purple-glow top-0 -left-20"></div>
+    <div class="purple-glow bottom-0 -right-20"></div>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 py-6 px-10 flex justify-between items-center bg-black/40 backdrop-blur-lg border-b border-white/5">
+        <div class="text-xl font-extrabold tracking-tighter uppercase">
+            AI<span class="text-purple-500">ENGINEER</span>
+        </div>
+        <div class="hidden md:flex space-x-8 text-xs font-bold uppercase tracking-widest text-slate-400">
+            <a href="#solucion" class="hover:text-purple-400 transition">Solución</a>
+            <a href="#inversion" class="hover:text-purple-400 transition">Inversión</a>
+            <a href="#workflow" class="hover:text-purple-400 transition">Workflow</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="pt-48 pb-24 px-6 text-center max-w-5xl mx-auto">
+        <div class="inline-block px-4 py-1 rounded-full border border-purple-500/30 text-[10px] font-bold uppercase tracking-widest text-purple-400 mb-8 bg-purple-500/10">
+            Propuesta para Cliente Estratégico
+        </div>
+        <h1 class="text-5xl md:text-8xl font-extrabold mb-8 leading-tight tracking-tight">
+            Diseño que <br> <span class="gradient-text">piensa por vos.</span>
+        </h1>
+        <p class="text-slate-400 text-lg md:text-xl max-w-2xl mx-auto mb-12 leading-relaxed font-light">
+            No es solo una web. Es una infraestructura de conversión optimizada con <strong class="text-white">Inteligencia Artificial</strong> para dominar tu mercado.
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center gap-6">
+            <a href="#inversion" class="bg-purple-600 hover:bg-purple-700 text-white px-12 py-5 rounded-2xl font-extrabold transition transform hover:scale-105 shadow-2xl shadow-purple-500/20">
+                Aceptar Propuesta Base
+            </a>
+            <a href="#solucion" class="glass-card px-12 py-5 rounded-2xl font-extrabold transition hover:bg-white/5">
+                Ver Detalles Técnicos
+            </a>
+        </div>
+    </header>
+
+    <!-- Solution Section -->
+    <section id="solucion" class="py-32 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold mb-8 leading-tight">Por qué el enfoque <br> <span class="text-purple-500">AI-Driven</span> es superior.</h2>
+                    <p class="text-slate-400 mb-10 leading-relaxed italic border-l-2 border-purple-500 pl-6">
+                        "La eficiencia no es hacer más cosas, es eliminar lo innecesario mediante ingeniería inteligente."
+                    </p>
+                    <div class="space-y-8">
+                        <div class="flex gap-6">
+                            <div class="w-12 h-12 glass-card flex items-center justify-center shrink-0 text-purple-400 font-bold">01</div>
+                            <div>
+                                <h4 class="font-bold text-white text-lg">Velocidad de Carga (Core Web Vitals)</h4>
+                                <p class="text-sm text-slate-500 mt-2">Nuestras landings cargan en menos de 1.2s. En Argentina, la velocidad es el factor #1 de conversión móvil.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-6">
+                            <div class="w-12 h-12 glass-card flex items-center justify-center shrink-0 text-purple-400 font-bold">02</div>
+                            <div>
+                                <h4 class="font-bold text-white text-lg">Arquitectura de Persuasión (IA)</h4>
+                                <p class="text-sm text-slate-500 mt-2">Copywriting entrenado en modelos de venta directa para capturar leads de forma automática.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="glass-card p-10 relative overflow-hidden group">
+                    <h3 class="text-sm font-bold text-purple-400 uppercase tracking-widest mb-8 text-center">Optimización de Recursos (ROI)</h3>
+                    <div class="chart-container">
+                        <canvas id="efficiencyChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="inversion" class="py-32 px-6 bg-white/[0.01]">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="glass-card p-12 md:p-20 border-purple-500/40 relative">
+                <h2 class="text-sm font-bold text-purple-400 uppercase tracking-widest mb-6">Inversión Express</h2>
+                <div class="text-8xl font-black mb-6 gradient-text tracking-tighter">u$s 250</div>
+                <p class="text-slate-400 mb-12 text-lg">Un activo digital de elite a una fracción del costo de agencia.</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-left mb-16">
+                    <div class="flex items-center space-x-4 text-sm text-slate-300">
+                        <span class="text-purple-500">✦</span> <span>Diseño en Framer (One-Page High-End)</span>
+                    </div>
+                    <div class="flex items-center space-x-4 text-sm text-slate-300">
+                        <span class="text-purple-500">✦</span> <span>Hosting Global & SSL Certificado</span>
+                    </div>
+                    <div class="flex items-center space-x-4 text-sm text-slate-300">
+                        <span class="text-purple-500">✦</span> <span>Integración Directa a WhatsApp/CRM</span>
+                    </div>
+                    <div class="flex items-center space-x-4 text-sm text-slate-300">
+                        <span class="text-purple-500">✦</span> <span>SEO On-Page & Performance 100/100</span>
+                    </div>
+                </div>
+                
+                <a href="https://wa.me/tu_numero" class="block w-full bg-white text-black py-5 rounded-2xl font-black text-xl hover:bg-slate-200 transition-all uppercase tracking-tighter transform hover:scale-[1.02]">
+                    Empezar Ahora
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Add-ons Table -->
+    <section class="py-32 px-6">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-3xl font-bold mb-16 text-center">Escalabilidad (Add-ons)</h2>
+            <div class="grid grid-cols-1 gap-4">
+                <div class="glass-card p-8 flex flex-col md:flex-row justify-between items-center gap-6 group hover:bg-white/[0.05]">
+                    <div>
+                        <h4 class="text-xl font-bold text-white mb-2">CMS Dinámico (Blog/Portfolio)</h4>
+                        <p class="text-sm text-slate-500">Sistema auto-gestionable para subir contenido ilimitado.</p>
+                    </div>
+                    <div class="text-2xl font-black text-purple-400">+u$s 120</div>
+                </div>
+                <div class="glass-card p-8 flex flex-col md:flex-row justify-between items-center gap-6 group hover:bg-white/[0.05]">
+                    <div>
+                        <h4 class="text-xl font-bold text-white mb-2">Asistente IA 24/7</h4>
+                        <p class="text-sm text-slate-500">Chatbot entrenado con tu conocimiento para vender mientras dormís.</p>
+                    </div>
+                    <div class="text-2xl font-black text-purple-400">+u$s 150</div>
+                </div>
+                <div class="glass-card p-8 flex flex-col md:flex-row justify-between items-center gap-6 group hover:bg-white/[0.05]">
+                    <div>
+                        <h4 class="text-xl font-bold text-white mb-2">Multi-idioma (ES/EN)</h4>
+                        <p class="text-sm text-slate-500">Internacionalización completa de tu propuesta de valor.</p>
+                    </div>
+                    <div class="text-2xl font-black text-purple-400">+u$s 90</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-32 px-6 border-t border-white/5 text-center">
+        <div class="max-w-3xl mx-auto">
+            <p class="text-purple-500 font-bold uppercase tracking-widest text-[10px] mb-8">Next Step</p>
+            <h2 class="text-4xl font-extrabold mb-12">¿Listo para transformar <br>tu presencia digital?</h2>
+            <div class="flex justify-center gap-8 mb-20">
+                <a href="#" class="text-slate-500 hover:text-white transition">LinkedIn</a>
+                <a href="#" class="text-slate-500 hover:text-white transition">X (Twitter)</a>
+                <a href="#" class="text-slate-500 hover:text-white transition">Portfolio</a>
+            </div>
+            <p class="text-slate-700 text-xs">Propuesta Técnica válida por 15 días corridos. <br> Argentina, 2026.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Chart.js Configuration
+        const ctx = document.getElementById('efficiencyChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: [['Dev.', 'Tradicional'], ['Flujo', 'AI-Driven']],
+                datasets: [{
+                    label: 'Costo de Ejecución (Horas)',
+                    data: [80, 15],
+                    backgroundColor: ['rgba(255, 255, 255, 0.05)', '#8b5cf6'],
+                    borderRadius: 15,
+                    borderWidth: 0,
+                    barThickness: 50
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: { display: false },
+                    x: { 
+                        grid: { display: false },
+                        ticks: { color: '#64748b', font: { weight: 'bold' } }
+                    }
+                },
+                plugins: {
+                    legend: { display: false },
+                    tooltip: {
+                        enabled: true,
+                        backgroundColor: '#1e1b4b',
+                        titleColor: '#fff',
+                        bodyColor: '#a78bfa',
+                        padding: 12,
+                        cornerRadius: 12,
+                        callbacks: {
+                            title: function(items) {
+                                return Array.isArray(items[0].label) ? items[0].label.join(' ') : items[0].label;
+                            }
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
